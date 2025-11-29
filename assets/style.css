@@ -1,0 +1,38 @@
+
+:root{
+  --bg: #f6efe6;
+  --card: #fff;
+  --text: #2b210f;
+  --muted: #6b5a46;
+  --accent: #4b2e12;
+  --maxw: 1100px;
+  --radius: 14px;
+  --gap: 18px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:var(--text); background:var(--bg); -webkit-font-smoothing:antialiased;}
+.container{max-width:var(--maxw); margin:0 auto; padding:28px;}
+.header{display:flex; align-items:center; justify-content:space-between; gap:16px}
+.brand{display:flex; align-items:center; gap:14px}
+.brand img{height:56px; border-radius:10px; background:transparent}
+.brand .title{font-weight:700; letter-spacing:0.2px}
+.nav a{margin-left:18px; text-decoration:none; color:var(--muted); font-weight:600}
+.hero{display:grid; grid-template-columns:1fr; gap:20px; align-items:center; padding:36px 0}
+.hero h1{margin:0; font-size:34px; line-height:1.05}
+.lead{margin-top:12px; color:var(--muted); max-width:62ch}
+.cta{display:inline-block; padding:12px 18px; background:var(--accent); color:#fff; border-radius:10px; text-decoration:none; margin-top:14px}
+.card{background:var(--card); padding:18px; border-radius:12px; box-shadow:0 6px 18px rgba(43,33,15,0.06)}
+.grid3{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px}
+.services-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
+.service{display:flex; gap:12px; align-items:flex-start}
+.service .icon{width:56px;height:56px;border-radius:10px;background:linear-gradient(180deg,rgba(75,46,18,0.06),rgba(75,46,18,0.02));display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--accent)}
+footer{padding:30px 0; color:var(--muted); font-size:14px}
+.contact-list{list-style:none;padding:0;margin:0}
+.contact-list li{margin-bottom:8px;color:var(--muted)}
+@media(min-width:900px){
+  .hero{grid-template-columns:1fr 420px; gap:28px}
+  .hero h1{font-size:44px}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+}
+.small{font-size:13px;color:var(--muted)}
+.logo-mark{width:44px;height:44px;background:linear-gradient(180deg,#f0e6d8,#e9dfcf);display:flex;align-items:center;justify-content:center;border-radius:8px;border:2px solid rgba(75,46,18,0.06)}
